@@ -137,26 +137,27 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import Swiper from 'swiper'
-  import 'swiper/dist/css/swiper.min.css'
+import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.min.css'
 
-  import HeaderTop from '../../components/HeaderTop/HeaderTop'
-  import ShopList from '../../components/ShopList/ShopList'
-  export default {
-    mounted(){
-      new Swiper('.swiper-container',{
-        loop:true,
-        // 如果需要分页器
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      })
-    },
-    components:{
-      HeaderTop,
-      ShopList
-    }
+import HeaderTop from '../../components/HeaderTop/HeaderTop'
+import ShopList from '../../components/ShopList/ShopList'
+export default {
+  mounted () {
+    // eslint-disable-next-line no-new
+    new Swiper('.swiper-container', {
+      loop: true,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination'
+      }
+    })
+  },
+  components: {
+    HeaderTop,
+    ShopList
   }
+}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">

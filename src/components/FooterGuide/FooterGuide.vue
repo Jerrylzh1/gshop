@@ -28,14 +28,14 @@
 </template>
 
 <script type="text/ecmascript-6">
-  export default {
-    methods:{
-      goTo(path){
-        //转换路由
-        this.$router.replace(path)
-      }
+export default {
+  methods: {
+    goTo (path) {
+      // 转换路由
+      this.$router.replace(path)
     }
   }
+}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
